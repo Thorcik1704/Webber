@@ -1,0 +1,2 @@
+# Webber
+set grid x set grid y set border 0 set xzeroaxis lt -1 set yzeroaxis lt -1 set size square set term svg enhanced size 512,512 set output "LinLinScale.svg"  plot [-1:10] [-1:10]                                      \         (10**x)    title "f(x) = 10^x"        with lines, \         (x)        title "f(x) = x"           with lines, \         (log10(x)) title "f(x) = log_{10}(x)" with lines
